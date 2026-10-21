@@ -3,7 +3,7 @@
 ;; Author: ro15rend
 ;; URL: https://github.com/ro15rend/candy-theme
 ;; Version: 0.2.0
-;; Package-Requires: ((base16-theme "0"))
+;; Package-Requires: ((emacs "28.1") (base16-theme "3.0"))
 ;; Keywords: faces themes
 
 ;;; Commentary:

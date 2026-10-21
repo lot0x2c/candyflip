@@ -3,7 +3,7 @@
 ;; Author: ro15rend
 ;; URL: https://github.com/ro15rend/candy-theme
 ;; Version: 0.2.0
-;; Package-Requires: ((emacs "28.1") (base16-theme "0"))
+;; Package-Requires: ((emacs "28.1") (base16-theme "3.0"))
 ;; Keywords: faces themes
 
 ;;; Commentary:
@@ -246,6 +246,10 @@ EXTRA-FACES is a list of base16 face specs for this theme only."
       (when (custom-theme-enabled-p theme)
         (disable-theme theme)))
     (load-theme next t)))
+
+;;;###autoload
+(defalias 'flip #'candy-toggle
+  "Switch between the candy and candy flip themes.")
 
 (provide 'candy-common)
 
