@@ -1,7 +1,7 @@
-;;; base16-candy-flip-theme.el --- dark counterpart to candy -*- lexical-binding: t; -*-
+;;; base16-acid-theme.el --- dark counterpart to candy -*- lexical-binding: t; -*-
 
 ;; Author: ro15rend
-;; URL: https://github.com/ro15rend/candy-theme
+;; URL: https://github.com/ro15rend/candyflip
 ;; Version: 0.2.0
 ;; Package-Requires: ((emacs "28.1") (base16-theme "3.0"))
 ;; Keywords: faces themes
@@ -15,12 +15,12 @@
 (require 'base16-theme)
 ;; theme files are found through `custom-theme-load-path', which is
 ;; not `load-path', so load the shared file from this directory
-(require 'candy-common
-         (expand-file-name "candy-common"
+(require 'candyflip
+         (expand-file-name "candyflip"
                            (file-name-directory
                             (or (macroexp-file-name) buffer-file-name))))
 
-(defconst base16-candy-flip-theme-colors
+(defconst base16-acid-theme-colors
   '(:base00 "#1a1218"    ; bg, dark plum
     :base01 "#2a2028"    ; lighter bg, dark mauve
     :base02 "#3d2d38"    ; selection, dusty plum
@@ -39,9 +39,9 @@
     :base0F "#db487b")
   "All colors for Base16 Flip are defined here.")
 
-(deftheme base16-candy-flip)
+(deftheme base16-acid)
 
-(candy-define 'base16-candy-flip base16-candy-flip-theme-colors
+(candyflip-define 'base16-acid base16-acid-theme-colors
                   '((org-level-3 :foreground base09 :weight bold)))
 
 ;;;###autoload
@@ -50,8 +50,8 @@
      (add-to-list 'custom-theme-load-path
                   (file-name-as-directory (file-name-directory load-file-name))))
 
-(provide-theme 'base16-candy-flip)
+(provide-theme 'base16-acid)
 
-(provide 'base16-candy-flip-theme)
+(provide 'base16-acid-theme)
 
-;;; base16-candy-flip-theme.el ends here
+;;; base16-acid-theme.el ends here

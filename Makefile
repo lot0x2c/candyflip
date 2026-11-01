@@ -1,7 +1,7 @@
 EMACS   ?= emacs
-NAME    := candy-theme
+NAME    := candyflip
 VERSION := 0.2.0
-FILES   := candy-common.el base16-candy-theme.el base16-candy-flip-theme.el
+FILES   := candyflip.el base16-candy-theme.el base16-acid-theme.el
 
 # where `make install` copies the theme files
 PREFIX ?= $(HOME)/.emacs.d/themes
@@ -27,7 +27,7 @@ check:
 	$(EMACS) -Q --batch $(LOADPATH) -L . \
 	  --eval "(add-to-list 'custom-theme-load-path default-directory)" \
 	  --eval "(load-theme 'base16-candy t)" \
-	  --eval "(load-theme 'base16-candy-flip t)" \
+	  --eval "(load-theme 'base16-acid t)" \
 	  --eval "(message \"both themes load\")"
 	rm -f *.elc
 

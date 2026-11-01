@@ -1,7 +1,7 @@
 ;;; base16-candy-theme.el --- a pink/teal light theme for emacs -*- lexical-binding: t; -*-
 
 ;; Author: ro15rend
-;; URL: https://github.com/ro15rend/candy-theme
+;; URL: https://github.com/ro15rend/candyflip
 ;; Version: 0.2.0
 ;; Package-Requires: ((emacs "28.1") (base16-theme "3.0"))
 ;; Keywords: faces themes
@@ -15,8 +15,8 @@
 (require 'base16-theme)
 ;; theme files are found through `custom-theme-load-path', which is
 ;; not `load-path', so load the shared file from this directory
-(require 'candy-common
-         (expand-file-name "candy-common"
+(require 'candyflip
+         (expand-file-name "candyflip"
                            (file-name-directory
                             (or (macroexp-file-name) buffer-file-name))))
 
@@ -41,7 +41,7 @@
 
 (deftheme base16-candy)
 
-(candy-define 'base16-candy base16-candy-theme-colors)
+(candyflip-define 'base16-candy base16-candy-theme-colors)
 
 ;;;###autoload
 (and load-file-name
