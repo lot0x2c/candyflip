@@ -1,7 +1,7 @@
 ;;; base16-candy-theme.el --- a pink/teal light theme for emacs -*- lexical-binding: t; -*-
 
-;; Author: ro15rend
-;; URL: https://github.com/ro15rend/candyflip
+;; Author: lot0x2c
+;; URL: https://github.com/lot0x2c/candyflip
 ;; Version: 0.2.0
 ;; Package-Requires: ((emacs "28.1") (base16-theme "3.0"))
 ;; Keywords: faces themes

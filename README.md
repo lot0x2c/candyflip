@@ -26,7 +26,7 @@ Doom Emacs, in `packages.el`, then `doom sync`:
 ```elisp
 (package! base16-theme)
 (package! candyflip
-  :recipe (:host github :repo "ro15rend/candyflip" :files ("*.el")))
+  :recipe (:host github :repo "lot0x2c/candyflip" :files ("*.el")))
 ```
 
 and in `config.el`: `(setq doom-theme 'base16-candy)`.
@@ -45,7 +45,7 @@ into your init file.
 The website has everything else too: every option explained, the full
 palette, how the colours were chosen, and all install methods.
 
-<https://ro15rend.github.io/p/candyflip/>
+<https://lot0x2c.github.io/p/candyflip/>
 
 ## License
 
